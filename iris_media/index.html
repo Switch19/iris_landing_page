@@ -4,44 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/css/main.css">
-
+    <link rel="stylesheet" href="../index.css">
+    <script src="index.js" defer></script>
     <title>IRIS MEDIA</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="./images/media_logo.png" alt=""></div>
+            <div class="logo"><img src="./images/media_logo.png" alt="" loading="lazy"></div>
             <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">RESEARCH TEAM</a></li>
-                <li><a href="#">PHOTOGRAPHY TEAM</a></li>
-                <li><a href="#">EVENT PLANNING</a></li>
-                <li><a href="#">GRAPHIC DESIGN</a></li>
-                <li><a href="#">WEB DESIGN</a></li>           
+                <li><a href="#research">RESEARCH TEAM</a></li>
+                <li><a href="#photography">PHOTOGRAPHY TEAM</a></li>
+                <li><a href="#event">EVENT PLANNING</a></li>
+                <li><a href="#graphic">GRAPHIC TEAM</a></li>
+                <li><a href="#program">PROGRAMMING TEAM</a></li> 
+                <li><a href="#contact">CONTACT</a></li> 
+                          
             </ul>
         </nav>
         <div class="banner">
             <div class="banner_img">
-                <img src="./images/bn.jpg" alt="">
+                <img src="./images/bn.jpg" alt="" loading="lazy">
+
+                <button class="nav-toggle" style="background-color: white; width: 100px height;">
+                    <i class="fas fa-bars"></i>
+                </button>
+        
             </div>
 
             <div class="text-div">
                 <head>
-                    <p class="bn-text">ABOUT IRIS MEDIA COMMUNICATIONS</p>
+                    <h1 class="bn-text">IRIS MEDIA COMMUNICATIONS</h1>
                 </head>
 
-                <p>IRIS MEDIA COMMUNICATIONS is a group of
-                    wonderful broadcasting teams and other media services. 
-                    Our major commodity is information, and we aim to help 
-                    disseminate concrete and worthwhile information to students
-                    on campus. While we may not reach a large number of audiences,
-                    we strive to reach all students.
-                </p>
+                <p class="abt-iris">IRIS MEDIA COMMUNICATIONS is the window through which you gain exclusive insights and updates about the IRIS ECOSYSTEM.
+
+                    Existing as  your best *WHATSAPP MEDIA ON CAMPUS 🪀* in creating your
+                    
+                    *_⚜️Daily Entertaining Contents_*
+                    *_⚜️Latest Gists on Campus Happs round the clock!!_*🔂
+                    *_⚜️VALID Information!!!_*
+                    *_⚜️MEME HUB🥹😂_*
+                    *_⚜️Healthy Motivational & Inspirational Quotes to Start Your Day with_*😇
+                </p>    
+                <p class="abt-iris">   
+                    *OUR SPECIALS*
+                    🥳
+                    *🔅"CATCH Up on OUR Man-Crush-Monday 🌟 and Woman-Crush-Wednesday, a Free Advertising Program for Hardworking Boys and Girls (with businesses)on CAMPUS"*
+                    
+                    *🔅"Our Random giveaway activities are not left out"*                
+                </p>              
             </div>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section class="main research" id="research">
+            <div class="banner_img">
+                <img src="./images/research.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="text-div">
+                <head>
+                    <p class="bn-text">RESEARCH TEAM</p>
+                </head>
+
+                <p>Our team of researchers is exceptional, offering top-notch services in project writing,
+                    seminars, essay research, I.T research, Plagiarism check and paraphrasing. We are committed to 
+                    providing platinum-level assistance in these areas.
+                </p>
+
+            </div>
+        </section>
+        <section class="main photography" id="photography">
+            <div class="banner_img">
+                <img src="./images/photo.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="text-div">
+                <head>
+                    <p class="bn-text">PHOTOGRAPHY TEAM</p>
+                </head>
+
+                <p>Introducing our photography Team, dedicated to capturing precious moments.
+                     Through our lenses, we skillfully frame the corners of your smiles 
+                     during moments of celebration. Our goal is to create images 
+                    that are worthy of being hung on the walls, taking you down memory lane.
+                </p>
+
+            </div>
+        </section>
+        <section class="main event" id="event">
+            <div class="banner_img">
+                <img src="./images/events.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="text-div">
+                <head>
+                    <p class="bn-text">EVENT PLANNING</p>
+                </head>
+
+                <p>Experience the expertise of our Event Planning Team as
+                    we meticulously plan every aspect of your events. From stage decoration to
+                    stage performances,
+                    we add a touch of joy to create unforgettable moments.                                     
+                </p>
+
+            </div>
+        </section>
+        <section class="main graphic" id="graphic">
+            <div class="banner_img">
+                <img src="./images/graphics.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="text-div">
+                <head>
+                    <p class="bn-text">GRAPHICS TEAM</p>
+                </head>
+
+                <p>Discover the power of our Graphics Design Team and 
+                    take your brand to new heights. Stand out from the competition
+                     with our cutting-edge graphic design solutions, featuring eye-catching
+                     designs that truly capture the essence of your unique identity.
+                </p>
+
+            </div>
+        </section>
+        <section class="main program" id="program">
+            <div class="banner_img">
+                <img src="./images/program.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="text-div">
+                <head>
+                    <p class="bn-text">PROGRAMMING TEAM</p>
+                </head>
+
+                <p>Do you want to own a website of your own or create your own app? Our team, with the best taste in design, will provide you with a perfect user self-guide module, 
+                giving your clients an enjoyable experience as they use your product.
+                </p>
+
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <form class="form">
+            <div class="title">Contact us</div>
+            <input type="text" placeholder="Your email" class="input">
+            <textarea placeholder="Your message"></textarea>
+             
+            <button>Submit</button>
+        </form>
+        <div>
+            <button class="contact-direct">
+                <a href="">Work With Me</a>
+            </button>
+        </div>
+        <p class="copy">
+            &copy;<span class="date"></span> Iris Media All rights reserved.
+        </p>
+        
+    </footer>
 </body>
 </html>
