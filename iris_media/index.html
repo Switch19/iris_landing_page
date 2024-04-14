@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- styles -->
     <link rel="stylesheet" href="../index.css">
     <script src="index.js" defer></script>
-    <title>IRIS MEDIA</title>
+    <title>IRIS AS A BRAND</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="./images/media_logo.png" alt="" loading="lazy"></div>
+            <span class="logo">IRIS AS A BRAND</span>
             <ul>
+                <li><a href="#about">IRIS MEDIA</a></li>
                 <li><a href="#research">RESEARCH TEAM</a></li>
                 <li><a href="#photography">PHOTOGRAPHY TEAM</a></li>
                 <li><a href="#event">EVENT PLANNING</a></li>
@@ -22,19 +26,19 @@
                           
             </ul>
         </nav>
-        <div class="banner">
+        <div class="banner" id="about">
             <div class="banner_img">
                 <img src="./images/bn.jpg" alt="" loading="lazy">
 
-                <button class="nav-toggle" style="background-color: white; width: 100px height;">
+                <!-- <button class="nav-toggle">
                     <i class="fas fa-bars"></i>
-                </button>
+                </button> -->
         
             </div>
 
             <div class="text-div">
                 <head>
-                    <h1 class="bn-text">IRIS MEDIA COMMUNICATIONS</h1>
+                    <h1 class="bn-text">IRIS MEDIA</h1>
                 </head>
 
                 <p class="abt-iris">IRIS MEDIA COMMUNICATIONS is the window through which you gain exclusive insights and updates about the IRIS ECOSYSTEM.
@@ -65,7 +69,7 @@
 
             <div class="text-div">
                 <head>
-                    <p class="bn-text">RESEARCH TEAM</p>
+                    <h2 class="bn-text">RESEARCH TEAM</h2>
                 </head>
 
                 <p>Our team of researchers is exceptional, offering top-notch services in project writing,
@@ -82,7 +86,7 @@
 
             <div class="text-div">
                 <head>
-                    <p class="bn-text">PHOTOGRAPHY TEAM</p>
+                    <h2 class="bn-text">PHOTOGRAPHY TEAM</h2>
                 </head>
 
                 <p>Introducing our photography Team, dedicated to capturing precious moments.
@@ -100,7 +104,7 @@
 
             <div class="text-div">
                 <head>
-                    <p class="bn-text">EVENT PLANNING</p>
+                    <h2 class="bn-text">EVENT PLANNING</h2>
                 </head>
 
                 <p>Experience the expertise of our Event Planning Team as
@@ -118,7 +122,7 @@
 
             <div class="text-div">
                 <head>
-                    <p class="bn-text">GRAPHICS TEAM</p>
+                    <h2 class="bn-text">GRAPHICS TEAM</h2>
                 </head>
 
                 <p>Discover the power of our Graphics Design Team and 
@@ -136,7 +140,7 @@
 
             <div class="text-div">
                 <head>
-                    <p class="bn-text">PROGRAMMING TEAM</p>
+                    <h2 class="bn-text">PROGRAMMING TEAM</h2>
                 </head>
 
                 <p>Do you want to own a website of your own or create your own app? Our team, with the best taste in design, will provide you with a perfect user self-guide module, 
@@ -164,5 +168,54 @@
         </p>
         
     </footer>
+
+    <button class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <span>IRIS AS A BRAND</span>
+          <button class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+            <li><a href="#about">IRIS MEDIA</a></li>
+            <li><a href="#research">RESEARCH TEAM</a></li>
+            <li><a href="#photography">PHOTOGRAPHY TEAM</a></li>
+            <li><a href="#event">EVENT PLANNING</a></li>
+            <li><a href="#graphic">GRAPHIC TEAM</a></li>
+            <li><a href="#program">PROGRAMMING TEAM</a></li> 
+            <li><a href="#contact">CONTACT</a></li> 
+        </ul>
+        <!-- social media -->
+        <!-- <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-sketch"></i>
+            </a>
+          </li>
+        </ul> -->
+      </aside>
+  
 </body>
 </html>
