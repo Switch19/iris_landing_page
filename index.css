@@ -95,12 +95,12 @@ header{
     margin-right: 1.5rem;
     justify-content: center;
     align-items: center;
-    border-radius: 3px;
 }
 .banner_img img{
     width: 100%;
     height: 100%;
     object-fit: fill;
+    border-radius: 5px;
 }
 
 .text-div {
@@ -111,19 +111,44 @@ header{
 
 }
 .abt-iris{
-    font-size: .9em;
+    font-size: 1em;
     margin-left:3.5rem;
+    color: #38052e;
+
+}
+.text-div p{
+  color: #38052e;
+
 }
 
 .bn-text {
     font-size: 3em;
     font-weight: bold;
-    color: #000000;
+    color: #822c72;
     margin:1.5rem 1.5rem 1.3rem 3.5rem;
 
 }
+.contact-direct{
+  padding: 8px;
+  outline: 0;
+  text-align: center;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: #6E257F;
+  cursor: pointer;
+  margin-left:3.5rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+.contact-direct a{
+text-decoration: none;
+color: #eeeeee;
+
+}
+
 h1, h2{
-    margin-bottom: 1.15rem;
+    margin-bottom: 1.35rem;
     line-height: normal;
 }
 p{
@@ -138,12 +163,6 @@ footer{
     gap: 2rem;
     align-items: center;
     /* border: 1px solid; */
-}
-.contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 .form {
     position: relative;
@@ -160,7 +179,7 @@ footer{
   }
   
   .form .title {
-    color: royalblue;
+    color: #822c72;
     font-size: 30px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -197,37 +216,20 @@ footer{
     border-radius: 8px;
     font-size: 16px;
     font-weight: 500;
-    background-color: royalblue;
+    background-color: #6E257F;
     color: #fff;
     cursor: pointer;
   }
 
-  .contact-direct{
-        padding: 8px;
-        outline: 0;
-        text-align: center;
-        border: 0;
-        border-radius: 8px;
-        font-size: 1.3rem;
-        font-weight: 500;
-        background-color: royalblue;
-        cursor: pointer;
-        margin-bottom: 0;
-  }
-  .contact-direct a{
-    text-decoration: none;
-    color: #fff;
-
-  }
   .copy{
     font-size: .95rem;
-    color: rgb(4, 4, 7);
+    color: #822c72;
     text-align: center;
   }
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     nav{
         display: inline-flex;
         position: fixed;
@@ -235,17 +237,20 @@ footer{
         width: 100%;
         justify-content: space-around;
         align-items: center;
-        background: #17171c;
-        /* border: 1px solid white; */
+        background-color: #6E257F;
+        padding: 1.3rem 0;
     
     }
-    .logo{
-        font-size: 1rem;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-    }
-    ul{
+    .logo-img{
+      width: 100px;
+      height: 60px;
+  }
+  .logo-img img{
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+  }
+      ul{
         display: flex;
         justify-content: space-evenly;
         width: 80%;
@@ -255,25 +260,28 @@ footer{
     }
     ul li {
         list-style: none;
+        margin: 0 0.8rem;
         font-weight: 500;
         cursor: pointer;
     }
     ul li a {
         text-decoration: none;
-        color: #fbfbff;
-        font-size: .9em;
+        color: #f6ecff;
+        font-size: 1em;
+        font-weight: bold;
     
     }
+    .sidebar-toggle, aside{
+      display: none;
     }
-    @media screen and (max-width: 800px) {
+
+    }
+    @media screen and (max-width: 900px) {
         nav{
             display: none;
         }
         body{
             font-size: 75%;
-        }
-        header{
-            height: 110vh;
         }
         .main{
             display: flex;
@@ -281,71 +289,81 @@ footer{
             justify-content: center;
             align-items: center;
             width: 100%;
-            padding-top: 8rem;   
+            height: auto;
+
             /* border: 1px solid red; */
     
+        }
+        header{
+          /* background-color: #000000; */
+          height: auto;
         }
         .banner{
             display: flex;
             flex-direction: column;
-            padding-top: 8rem;   
+            padding-top: 4rem;
+            height: 100%;
             /* border: 1px solid green; */
         }
         .banner_img{
             display: flex;
-            width: 75%;
-            max-height: 400px;
+            width: 78%;
             margin: auto;
-            justify-content: center;
-            align-items: center;
-            /* border: 1px solid; */
+            height: 350px;
         }
         .banner_img img{
             object-fit: fill;
             border-radius: 4px;
         }
+        
         .text-div {
-            width: 100%;
-            padding: .4rem 1.5rem;
+            width: 78%;
+            margin: auto;
+            padding:2rem 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: self-start;
-            font-family: Helvetica, sans-serif;
-            /* border: 1px solid rgb(12, 23, 107); */
-        
+            /* border: 1px solid rgb(12, 23, 107);     */
         }
-    
-        p{
-            font-size: 1em;
-            font-weight: 400;
+        .bn-text {
+          margin:0;
+          margin-bottom: .9rem;
+          font-size: 2.5em;
+          font-weight: bold;
+          color: #822c72;
+      
+        }
+        p, .abt-iris{
+            font-size: 1.2em;
+            font-weight: 200;
+            margin: 0;
+            margin-bottom: 1.5rem;
+            line-height: 1.3rem;
+            color: #38052e;
             /* margin-bottom: 1.25rem; */
+        }
+        .contact-direct{
+          width: 50%;
+          margin: auto;
+        }
+        footer{
+          justify-content: center;
+
         }
         .sidebar-toggle {
             position: fixed;
-            top: 2rem;
-            right: 3rem;
+            top: 0.5rem;
+            right: 1.1rem;
             font-size: 2rem;
             background: transparent;
             border-color: transparent;
-            color: var(--clr-primary-5);
+            color: #822c72;
             transition: var(--transition);
             cursor: pointer;
             animation: bounce 2s ease-in-out infinite;
           }
           .sidebar-toggle:hover {
-            color: var(--clr-primary-7);
-          }
-          @keyframes bounce {
-            0% {
-              transform: scale(1);
-            }
-            50% {
-              transform: scale(1.5);
-            }
-            100% {
-              transform: scale(1);
-            }
+            color: #58184c;
           }
           
           .sidebar-header {
@@ -358,31 +376,36 @@ footer{
             font-size: 1.75rem;
             background: transparent;
             border-color: transparent;
-            color: var(--clr-primary-5);
+            color: #822c72;
             transition: var(--transition);
             cursor: pointer;
             color: var(--clr-red-dark);
           }
           .close-btn:hover {
-            color: var(--clr-red-light);
+            color: #58184c;
             transform: rotate(360deg);
           }
-          .logo {
-            justify-self: center;
-            height: 40px;
-          }
-          
+          .logo-img{
+            width: 100px;
+            height: 60px;
+        }
+        .logo-img img{
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+                  
           .links a {
             display: block;
             font-size: 1.5rem;
             text-transform: capitalize;
             padding: 1rem 1.5rem;
-            color: var(--clr-grey-5);
+            color: #822c72;
             transition: var(--transition);
           }
           .links a:hover {
-            background: var(--clr-primary-8);
-            color: var(--clr-primary-5);
+            background: #ffc5f4;
+            color: #58184c;
             padding-left: 1.75rem;
           }
           .social-icons {
@@ -422,16 +445,24 @@ footer{
     }
 
     
-      @media screen and (min-width: 800px) {
-        .sidebar-toggle, aside{
-          display: none;
-        }
-      }
-    
+
     
     /*
     =============== 
-    Sidebar
+    bounce animation
     ===============
     */
+
+    @keyframes bounce {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
     

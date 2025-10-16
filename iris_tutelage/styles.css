@@ -1,0 +1,30 @@
+.learn, .learn_grid{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 400px;
+
+}
+.learn_grid{
+    width: 100%;
+    height: 100%;
+}
+.text-div span{
+    display: block;
+    font-size: 1.25em;
+    color: #6E257F;
+}
+.text-div p{
+    font-size: 1em;
+    margin-bottom: 0.7rem;
+}
+@media screen and (min-width: 900px) {
+    #aid .text-div{
+        width: 95%;
+        margin: auto;
+    }
+    #aid p{
+        margin-bottom: 1rem;
+    }
+}

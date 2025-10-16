@@ -3,23 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../index.js" defer></script>
     <title>IRIS ECOSYSTEM</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="./images/iris_logo.png" alt=""></div>
+            <div class="logo-img">
+                <img src="./images/logo.png" alt="">
+            </div>
             <ul>
-
-                <li>ABOUT</li>
-                <li>IRIS AS A BRAND</li>
-                <li>IRIS AS AN INSTITUTION</li>
-                <li>IRIS AS A BUSINESS</li>               
+                <li><a href="#about">ABOUT</a></li> 
+                <li><a href="#brand">IRIS AS A Brand</a></li>
+                <li><a href="#institute">IRIS AS AN INSTITUTION</a></li>
+                <li><a href="#business">IRIS AS A BUSINESS</a></li>
+                <li><a href="#contact">CONTACT</a></li>                          
             </ul>
         </nav>
+        <div class="banner" id="about">
+            <div class="banner_img">
+                <img src="./images/eco.jpg" alt="" loading="lazy">        
+            </div>
+
+            <div class="text-div">
+                <head>
+                    <h1 class="bn-text">IRIS ECOSYSTEM</h1>
+                </head>
+
+                <p class="abt-iris">The IRIS ECOSYSTEM is a network of three TIERS,
+                    IRIS AS A BRAND, IRIS AS AN INSTITUTION, IRIS AS A BUSINESS.
+                    These tiers are broken down to be understood as functional industries in every active Economy. 
+                    The Mechanism or mode of operation spearheaded by IRIS gives a circular connectivity�� with a purpose to contribute, support, and grow.
+                </p>    
+                <p class="abt-iris">   
+                    These tiers collectively form the IRIS ECOSYSTEM, providing a structured pathway for individuals and entities to progress, collaborate, and thrive.             
+                </p>
+                <!-- <button class="contact-direct">
+                    <a href="">Click here to inquire about us</a>
+                </button>                   -->
+            </div>
+        </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section class="main research" id="brand">
+            <div class="banner_img">
+                <img src="./images/brand.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="text-div">
+                <head>
+                    <h2 class="bn-text">IRIS AS A BRAND</h2>
+                </head>
+
+                <p>
+                    As one of the 3 TIERS of the IRIS ECOSYSTEM, IRIS AS A BRAND offers a comprehensive range of services,
+                    provided and rendered upon approval and agreement of collaboration or partnership.
+                </p>
+                <button class="contact-direct">
+                    <a href="../iris_media/index.html">See More</a>
+                </button>
+
+
+            </div>
+        </section>
+        <section class="main photography" id="institute">
+            <div class="banner_img">
+                <img src="./images/institute.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="text-div">
+                <head>
+                    <h2 class="bn-text">IRIS AS AN INSTITUTION</h2>
+                </head>
+
+                <p>
+                    Also part of the 3 TIERS of the IRIS ECOSYSTEM, 
+                    IRIS AS AN INSTITUTION focuses on learning and self-development.
+                    It serves as the foundational stage, equipping individuals with knowledge and skills necessary for progression.
+                    Once equipped, individuals can transition to the next tier, IRIS AS A BUSINESS, where they can apply their acquired knowledge and skills and gain recognition.
+                </p>
+                <button class="contact-direct">
+                    <a href="../iris_tutelage/index.html">See More</a>
+                </button>
+
+
+            </div>
+        </section>
+        <section class="main event" id="business">
+            <div class="banner_img">
+                <img src="./images/business.jpg" alt="" loading="lazy">
+            </div>
+
+            <div class="text-div">
+                <head>
+                    <h2 class="bn-text">IRIS AS A BUSINESS</h2>
+                </head>
+
+                <p>
+                    As a key tier within the IRIS ECOSYSTEM, 
+                    IRIS AS A BUSINESS specializes in business and collaborative conversations.
+                     Here, IRIS is open to partnering with Small Business Owners, Brands, and Big Projects,
+                      offering services in exchange for agreed support, partnership, leverage, profit, and gratification.                                  
+                </p>
+                <button class="contact-direct">
+                    <a href="">See More</a>
+                </button>
+
+
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <form class="form">
+            <div class="title">Contact us</div>
+            <input type="text" placeholder="Your email" class="input">
+            <textarea placeholder="Your message"></textarea>
+             
+            <button>Submit</button>
+        </form>
+        <p class="copy">
+            &copy;<span class="date"></span> Iris Ecosystem All rights reserved.
+        </p>
+        
+    </footer>
+
+    <button class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-img">
+                <img src="./images/logo.png" alt="">
+            </div>
+          <button class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+            <li><a href="#about">ABOUT</a></li> 
+            <li><a href="#brand">IRIS AS A Brand</a></li>
+            <li><a href="#institute">IRIS AS AN INSTITUTION</a></li>
+            <li><a href="#contact">CONTACT</a></li> 
+        </ul>
+        <!-- social media -->
+        <!-- <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-sketch"></i>
+            </a>
+          </li>
+        </ul> -->
+      </aside>
+  
 </body>
 </html>
